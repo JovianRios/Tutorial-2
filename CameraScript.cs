@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-
     public GameObject target;
 
     void Start()
     {
-
     }
     void LateUpdate()
     {
