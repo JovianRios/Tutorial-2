@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class PlayerScript : MonoBehaviour
 {
     private Rigidbody2D rd2d;
@@ -19,7 +18,7 @@ public class PlayerScript : MonoBehaviour
         rd2d = GetComponent<Rigidbody2D>();
         score.text = scoreValue.ToString();
     }
-
+    
     void FixedUpdate()
     {
         float hozMovement = Input.GetAxis("Horizontal");
@@ -35,7 +34,6 @@ public class PlayerScript : MonoBehaviour
             score.text = scoreValue.ToString();
             Destroy(collision.collider.gameObject);
         }
-
     }
 
 private void OnCollisionStay2D(Collision2D collision)
